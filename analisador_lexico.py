@@ -36,13 +36,14 @@ print('\nLista de comandos da biblioteca: {0}'.format(new_lista_dict))
 print('\nLista entradas passadas pelo usuário: {0}'.format(new_lista_entrada))
 
 
-#transforma as listas em conjuntos
+#Transforma as listas em conjuntos
 conjt_lista_dict = set(new_lista_dict)
 conjt_lista_entrada = set(new_lista_entrada)
 
-
+#Faz a interseção entre os conjunto, pegando os elemntos em comum e salvando em um outro conjunto
 commum = conjt_lista_dict.intersection(conjt_lista_entrada)
 
+#Imprime os elementos
 for elemento in commum:
     print('O elemento {0} é comum a biblioteca'.format(elemento))
 
